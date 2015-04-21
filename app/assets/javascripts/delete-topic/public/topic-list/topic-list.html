@@ -1,0 +1,22 @@
+  <div class="panel panel-default"><h3>Topics</h3>
+  <div class="panel-body">
+  
+<table class="table table-striped" ng-controller="topicListController">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th colspan="4"></th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat="topic in topics">
+			<td>{{ topic.title }} </td>
+			<td>{{ topic.description }} </td>
+			<td><button ng-click="deleteTopic(topic.id);">Delete</button><br /></td>
+		</tr>
+	</tbody>
+</table> 
+
+</div>
+</div>
